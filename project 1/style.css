@@ -1,0 +1,39 @@
+/* body style */
+body {
+    background-color: #000000; /* background color */
+    font-family: '', serif; /* font settings */ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff; /* text color */
+    margin: 10; /* remove margin */
+    padding: 100; /* remove padding */
+  }
+  
+  /* h1 style */
+  h1 {
+    color: #ffffff; /* white color */
+    text-align: center; /* center alignment */
+    margin-top: 50px; /* top margin */
+    font-family: '', serif; /* font settings */ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ h2 {
+    color:hotpink; /* white color */
+    font-family: '', serif; /* font settings */ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left; /* center alignment */
+    margin-top: 50px;
+    margin: 100; /* remove margin */
+    padding: 100; /* remove padding */
+ }
+  /* p style */
+  p {
+    font-size: 100px; /* font size */
+    font-family: '', serif; /* font settings */ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6; /* line spacing */
+    margin: 50px; /* margin */
+    text-align: center;
+    color:hotpink;
+  } 
+
+  a {
+  
+    color:hotpink;
+  } 
+
