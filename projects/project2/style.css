@@ -10,7 +10,7 @@ body {
 
 
   .background {
-    background-image: url("/Users/seohamin/Desktop/wksp/web/wksp/project2/images/load-33_256.gif");
+    background-image: url("../images/load-33_256.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
