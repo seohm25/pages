@@ -1,0 +1,55 @@
+h1{font-size: 100px;}
+
+nav a {
+    color:rgb(39, 39, 255);
+    transition: color 1s ease-in;
+    font-family:"Aujournuit";
+}
+
+@keyframes logo-rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes stretch{
+    0% {
+        font-stretch: 1%;
+    }
+    100% {
+        font-stretch: 9%;
+    }
+}
+
+#logo {
+    display: inline-block;
+    animation: logo-rotation 2s ease infinite alternate;
+}
+
+/* -----
+--------
+*/
+
+@font-face{
+    font-family: "Aujournuit-Airy";
+    src: url("exercise-3/font/Aujournuit-Airy.woff2") format ("woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Aujournuit";
+}
+
+@font-face {
+
+   font-family: "Aujournuit";
+   src: url("../exercises/exercise-3/font/Aujournuit-Airy.woff2") format("woff2");
+
+} 
+
+
+  
