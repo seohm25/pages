@@ -1,0 +1,35 @@
+
+
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 60pt;
+    background-color:rgb(241, 241, 234); 
+  }
+ 
+  p{
+    font-family: 'Inter', sans-serif;
+    font-size: 10pt;
+    font-weight: 300;
+  }
+ 
+  .stretchy-text {  
+    color: black;        /* before stretched */
+    font-stretch: 75%;
+    font-weight: 150;
+    letter-spacing: -5px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: font-stretch 0.4s ease, font-weight 0.4s ease;
+  }
+  
+  .stretchy-text:hover {  
+    color: rgb(238, 255, 0);         /* after stretched */
+    font-stretch: 125%;   /* larger */
+    font-weight: 300;     /* thicker */
+    -webkit-text-stroke: 1px rgb(0, 0, 0); /* outline stroke */
+  }
+
+
+
