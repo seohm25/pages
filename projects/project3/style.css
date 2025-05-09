@@ -5,6 +5,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 60pt;
     background-color:rgb(241, 241, 234); 
+
   }
  
   p{
@@ -20,7 +21,6 @@
     letter-spacing: -5px;
     display: inline-block;
     position: relative;
-    z-index: 1;
     transition: font-stretch 0.4s ease, font-weight 0.4s ease;
   }
   
@@ -32,4 +32,5 @@
   }
 
 
+  
 
