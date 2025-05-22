@@ -1,0 +1,244 @@
+/* 
+------------------------------------
+Fonts
+------------------------------------
+*/
+
+@font-face {
+  font-family: 'Absans';
+  src: url('../fonts/Absans-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Sprat';
+  src: url('../fonts/Sprat-Regular.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Sprat';
+  src: url('../fonts/Sprat-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'SpratVF';
+  src: url('../fonts/SpratVF.woff2') format('woff2-variations');
+}
+
+/* 
+------------------------------------
+Animations
+------------------------------------
+*/
+
+@keyframes fading {
+  0% {
+    color: rgb(11, 79, 18);
+  }
+  100% {
+    color: rgb(94, 175, 62);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* 
+------------------------------------
+Base container styles
+------------------------------------
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  grid-template-columns: max-content;
+  background-color: var(--nav--background);
+  font-family: "Merriweather", serif;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+  max-width: 60rem;
+  width: calc(100% - 300px);
+  margin-left: 300px;
+}
+
+nav {
+  background-color: rgb(215, 210, 228);
+  border-right: 1px solid #032805;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* 
+------------------------------------
+Base type styles
+------------------------------------
+*/
+
+:root{
+  --main-text: #0d5312;
+  --main-background: rgb(11, 79, 18);
+  --nav-text:rgb(80, 30, 168);
+  --nav-background: #032805;
+}
+h1 {
+  font-family: monospace;
+  color: #032805;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Absans', Verdana, sans-serif;
+  font-size: 1.5rem;
+  color: #0d5312;
+}
+
+h3 {
+  margin-top: 50px;
+  font-family: 'Sprat', Verdana, sans-serif;
+  font-weight: bold;
+  color: #032805;
+  transition: all 0.5s ease;
+}
+
+h4 {
+  margin-top: 50px;
+  font-family: 'Sprat', Verdana, sans-serif;
+  color: #032805;
+  transition: all 0.3s ease;
+}
+
+h3:target, h4:target {
+  /* transform: rotate(-2deg); */
+  /* filter: drop-shadow(2px 2px 4px green); */
+  animation: fading 1s alternate 0s infinite ease;
+}
+
+
+h3 + h4 {
+  margin-top: 0;
+}
+
+h3 + p {
+  text-indent: 20px;
+}
+
+p {
+  color: rgb(11, 79, 18);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  padding: 20px;
+
+  border: 1px solid rgb(11, 79, 18);
+
+  box-sizing: border-box;
+}
+
+figcaption {
+  font-family: 'Absans', Verdana, sans-serif;
+  font-size: 0.75rem;
+  color: rgb(11, 79, 18);
+  text-align: right;
+}
+
+/* 
+------------------------------------
+Navigation styles
+------------------------------------
+*/
+
+nav {
+
+  #logo {
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-size: 2rem;
+    animation: rotating 1s 0s infinite ease;
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    ol {
+      padding-left: 20px;
+    }
+  }
+
+
+  a {
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(80, 30, 168);
+    margin-bottom: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    font-family: 'SpratVF', serif;
+    font-stretch: 100%;
+    font-weight: 100;
+    color: var(--nav-text);
+    transition: all 0.5s ease;
+  }
+
+  a:hover {
+    font-weight: 600;
+  }
+}
+
+/*media screen media query*/
+@media screen and (min-width:600px) {
+  body { 
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  main {
+    grid-column:1/2;
+  }
+  nav {
+    grid-column:1/2;
+
+  }
+  
+}
+
+/*large screen media query*/
+@media screen and (min-width:1000px) {
+  body { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+
+  }
+  main {
+    grid-column:2/4;
+  }
+  nav {
+    grid-column:1/2;
+
+  }
+  
+}
+
